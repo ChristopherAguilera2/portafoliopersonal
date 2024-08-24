@@ -10,6 +10,10 @@
     font-weight: 300;
 }
 
+.carta{
+	width: 100%;
+}
+
 #foto{
     width: auto;
 }
@@ -111,4 +115,8 @@ button #myBtn{
 #proyecto-details img {
 	max-width: 100%;
 	height: auto;
+}
+
+input{
+	margin-bottom: 20px;
 }
