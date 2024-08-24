@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Christopher Aguilera Madrid">
+  <meta name="description" content="Te invito a conocerme atravez de esta pagina">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Paginas, Christopher, Aguilera, yo">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portafolio</title>
+  <!-- style text -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrao 4.5.2 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!--Mi script-->
+  <script src="assets/js/script.js"></script>
+  <!--Mi css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--barra de navegacion del proyecto-->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger mainnavbar">
+    <div class="container">
+      <a class="navbar-brand text-dark" href="index.html">Christopher Aguilera</a><!--modificar a-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-dark" href="#sobre-mi">Sobre mi<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#experiencia">Experiencia</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#trabajos">Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- foto section -->
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="btn col align-self-center">
+        <img type="button" data-toggle="modal" data-target="#modalinfo" class="col-12" src="assets/img/foto.png" alt="foto" id="foto">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal datos section-->
+<div class="modal fade" id="modalinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">informacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!-- texto 1 section -->
+        <div class="container">
+          <div class="row">
+            <table>
+              <tr>
+                <td class="col-4">
+                  <p>Nombre</p>
+                </td>
+                <td class="col-8">
+                  <p>Christopher Jesús Aguilera Madrid</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-4">
+                  <p>Fecha de <br>nacimiento</p>
+                </td>
+                <td class="col-8">
+                  <p>25 de febrero 1997</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-4">
+                  <p>Nacionalidad</p>
+                </td>
+                <td class="col-8">
+                  <p>Chilena</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-4">
+                  <p>Estado civil</p>
+                </td>
+                <td class="col-8">
+                  <p>Soltero</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-4">
+                  <p>Región</p>
+                </td>
+                <td class="col-8">
+                  <p>Santiago</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-4">
+                  <p>Comuna</p>
+                </td>
+                <td class="col-8">
+                  <p>El bosque</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-4">
+                  <p>e-mail</p>
+                </td>
+                <td class="col-8">
+                  <p>christopher.aguilera.mad@gmail.com</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div id="sobre-mi">
+  <button class="col align-self-center" id="informacion">mostrar</button>
+  <div id="datos">
+    <div class="container">
+      <div class="row">
+        <!-- info section -->
+        <div class="col-md-4  col-12">
+          <p>
+        Técnico nivel medio telecomunicaciones y desarrollador full stack JavaScript, dispuesto a participar en proyectos o cargos sobre 
+        aplicaciones y/o web, colaborando de manera efectiva para el cumplimiento de metas de equipo de trabajo, además brindad calidad y 
+        entusiasmo en los trabajos, y comunicación efectiva con las personas externas e internas. También desempeñar en conjunto a un equipo de 
+        trabajo mi labor como profesional, seguir desarrollando mis habilidades para entregar proyectos excelentes y con gran vocación. 
+        Asertividad en la toma de decisiones, comportamiento anticipatorio con orientación a las mejoras y tolerancia a una mayor carga laboral 
+        en cuanto a cumplir responsablemente en el menor tiempo labores designadas.
+          </p>
+        </div>
+        <!-- certificado section -->
+        <div class="col-md-4 d-none d-sm-none d-md-block">
+          <button type="button" data-toggle="modal" data-target="#modalcertificado1"><!--Abrir la carta-->
+            <img src="assets/img/media.png" alt="certificado1" id="certificado1">
+          </button>
+          <button type="button" data-toggle="modal" data-target="#modalcertificado2"><!--Abrir la carta-->
+            <img src="assets/img/javascript.png" alt="certificado2" id="certificado2">
+          </button>
+        </div>
+        <!-- conocimientos section -->
+        <div class="col-md-4 d-none d-sm-none d-md-block">
+          <ul>
+            <li>Conocimientos de instalaciones eléctricas</li>
+            <li>redes de cableado</li>
+            <li>informática intermedia</li>
+            <li>soporte técnico en computación y tecnología</li>
+            <li>uso de AutoCAD</li>
+            <li>(CSS, HTML, JavaScript, SQL, node, manejo API, GITHUB) JavaScript Full Stack</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal certificados section-->
+<div class="modal fade bd-example-modal-lg" id="modalcertificado1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">informacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/media.png" alt="certificado1" id="modalcertificado1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="modalcertificado2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">informacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/img/javascript.png" alt="certificado2" id="modalcertificado2">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- experiencias section -->
+<div id="experiencia">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 altura">
+        <h3>experiencia laborales</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner col-md-10 offset-md-1">
+            <div class="carousel-item active">
+              <p>Soporte técnico en la empresa Crawford como practicante Técnico de Telecomunicaciones por 3 meses en el 2015.</p>
+              <p>Principales Funciones:</p>
+              <ul>
+                <li>Mantención y funcionamientos de los equipos computacionales en hardware y software.</li>
+                <li>Mantención redes, telefonía e impresoras.</li>
+                <li>Responder y dar solución a los problemas presencial y no presencial.</li>
+                <li>Dar asistencia a los técnicos telefonía, informática y redes.</li>
+              </ul>      
+            </div>
+            <div class="carousel-item">
+              <p>Promotor en Falabella Mall Arauco Maipú por 1 mes en el 2017 para época de navidad.</p>
+              <p>Principales Funciones:</p>
+              <ul>
+                <li>Entregar muestras perfume.</li>
+                <li>Asesorar compraras para los clientes.</li>
+                <li>Mantener estante y productos ordenados.</li>
+              </ul>      
+            </div>
+            <div class="carousel-item">
+              <p>Soporte Técnico en la empresa PcFactory como Técnico en la sucursal Las Condes desde el 1 de febrero del 2018 hasta 13 de abril del 2020.</p>
+              <p>Principales Funciones:</p>
+              <ul>
+                <li>Diagnostico o arreglar producto con fallas.</li>
+                <li>Revisión estado productos.</li>
+                <li>Recepción y envió productos para reparación a la marca.</li>
+                <li>Atención al cliente en explicar y ayudar con el producto.</li>
+              </ul>      
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!--añadir con jquery que la hacer click, se esconda la seccion proyecto, 
+      y muestre la imagen del proyecto y al hacer click nos lleve a la pagina, y abajo d eeso estaria volver, 
+      y nos mostraria el listado original, estas deberian estar levantada en una pagina -->
+      <div class="col-12 col-lg-6">
+        <h3>proyectos del curso actual</h3>
+        <ul class="curso">
+          <li id="proyecto1">html con jquery</li>
+          <li id="proyecto2">agregar o eliminar en la LISTA DE TAREAS PENDIENTES</li>
+          <li id="proyecto3">Banca en linea con JS</li>
+          <li id="proyecto4">Sky Vacaciones</li>
+          <li id="proyecto5">Vuelos Vacaciones</li>
+        </ul>
+        <!-- Este div será mostrado en lugar de la lista de proyectos -->
+        <div id="proyecto-details">
+          <img id="proyecto-image" src="" alt="Imagen del Proyecto">
+          <p id="proyecto-description"></p>
+          <button id="volver" class="btn btn-primary col-10 col-md-4">Volver</button>
+          <a id="ir-pagina" href="" class="btn btn-secondary col-10 col-md-4" target="_blank">Ir a la Página</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- trabajos section -->
+<div id="trabajos">
+  <h3>Trabajos Destacados</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <button type="button" class="btn" data-toggle="modal" data-target="#pokemon"><!--Abrir la carta-->
+              <!--Carta numero 1-->
+              <div class="card">
+                <img src="assets/img/pokemon.png" class="card-img-top" alt="pokemon">
+                <div class="card-body">
+                  <h5 class="card-title">pokemon</h5>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col mb-4">
+            <button type="button" class="btn" data-toggle="modal" data-target="#nasa"><!--Abrir la carta-->
+              <!--Carta numero 2-->
+              <div class="card">
+                <img src="assets/img/nasa.png" class="card-img-top" alt="nasa">
+                <div class="card-body">
+                  <h5 class="card-title">nasa</h5>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col mb-4 d-none d-sm-none d-md-block">
+            <button type="button" class="btn" data-toggle="modal" data-target="#elecciones"><!--Abrir la carta-->
+            <!--Carta numero 3-->
+              <div class="card">
+                <img src="assets/img/elecciones.png" class="card-img-top" alt="elecciones">
+                <div class="card-body">
+                  <h5 class="card-title">elecciones</h5>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col mb-4">
+            <button type="button" class="btn" data-toggle="modal" data-target="#situacioncovid"><!--Abrir la carta-->
+            <!--Carta numero 4-->
+              <div class="card">
+                <img src="assets/img/situacioncovid.png" class="card-img-top" alt="situacioncovid">
+                <div class="card-body">
+                  <h5 class="card-title">situacioncovid</h5>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col mb-4 col-md-4 d-none d-sm-none d-md-block">
+            <button type="button" class="btn" data-toggle="modal" data-target="#quienganara"><!--Abrir la carta-->
+            <!--Carta numero 5-->
+              <div class="card">
+                <img src="assets/img/quienganara.png" class="card-img-top" alt="quienganara">
+                <div class="card-body">
+                  <h5 class="card-title">quienganara</h5>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col mb-4 col-md-4 d-none d-sm-none d-md-block">
+            <button type="button" class="btn" data-toggle="modal" data-target="#rickandmorty"><!--Abrir la carta-->
+            <!--Carta numero 6-->
+              <div class="card">
+                <img src="assets/img/rickandmorty.png" class="card-img-top" alt="rickandmorty">
+                <div class="card-body">
+                  <h5 class="card-title">rickandmorty</h5>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-1 align-self-center">
+        <button type="button" data-toggle="modal" data-target="#modalcodigos">mostrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--cartas abiertas-->
+<!--carta 1 abierta-->
+<div class="modal fade" id="pokemon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">pokemon</h5><!--titulo de la carta-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!--contenido de la carta-->
+        <img class="img-fluid mb-3" src="assets/img/pokemon.png" alt="pokemon">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Se uso JS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn"><a href="https://shielded-hollows-31126.herokuapp.com/" target="_blank">Ver PokeApi</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--carta 2 abierta-->
+<div class="modal fade" id="nasa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">nasa</h5><!--titulo de la carta-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!--contenido de la carta-->
+        <img class="img-fluid mb-3" src="assets/img/nasa.png" alt="Card image cap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Se uso JS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn"><a href="nasa.html" target="_blank">Ver nasa</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--carta 3 abierta-->
+<div class="modal fade" id="elecciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">elecciones</h5><!--titulo de la carta-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!--contenido de la carta-->
+        <img class="img-fluid mb-3" src="assets/img/elecciones.png" alt="Card image cap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Se uso JS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn"><a href="elecciones.html" target="_blank">Ver elecciones</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--carta 4 abierta-->
+<div class="modal fade" id="situacioncovid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">situacioncovid</h5><!--titulo de la carta-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!--contenido de la carta-->
+        <img class="img-fluid mb-3" src="assets/img/situacioncovid.png" alt="Card image cap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Se uso JS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn"><a href="situacioncovid.html" target="_blank">Ver situacioncovid</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--carta 5 abierta-->
+<div class="modal fade" id="quienganara" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">quienganara</h5><!--titulo de la carta-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!--contenido de la carta-->
+        <img class="img-fluid mb-3" src="assets/img/quienganara.png" alt="Card image cap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Se uso JS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn"><a href="quienganara.html" target="_blank">Ver quienganara</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--carta 6 abierta-->
+<div class="modal fade" id="rickandmorty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">rickandmorty</h5><!--titulo de la carta-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!--contenido de la carta-->
+        <img class="img-fluid mb-3" src="assets/img/rickandmorty.png" alt="Card image cap">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Se uso JS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn"><a href="https://rick-and-morty-88e8f.firebaseapp.com/" target="_blank">Ver Rick and Morty</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal codigos section-->
+<div class="modal fade" id="modalcodigos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">informacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- texto 1 section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <p>codigos curso anterior</p>
+              <ul>
+                <li><a href="https://github.com/christopher1aguilera/La-NASA" target="_blank">La NASA</a></li>
+                <li><a href="https://github.com/christopher1aguilera/rick-and-morty-Info-de-personajes" target="_blank">Rick and Morty</a></li>
+                <li><a href="https://github.com/christopher1aguilera/sugerencia-de-videos" target="_blank">sugerencia de videos</a></li>
+                <li><a href="https://github.com/christopher1aguilera/ferias-en-chile" target="_blank">feriados en chile</a></li>
+                <li><a href="https://github.com/christopher1aguilera/cachipun" target="_blank">cachipun</a></li>
+                <li><a href="https://github.com/christopher1aguilera/covid-mundial" target="_blank">covid19</a></li>
+                <li><a href="https://github.com/christopher1aguilera/Abracadabra" target="_blank">Abracadabra</a></li>
+                <li><a href="https://github.com/christopher1aguilera/Black-and-White" target="_blank">Black and White</a></li>
+                <li><a href="https://github.com/christopher1aguilera/mi-repositorio" target="_blank">mi repositorio</a></li>
+                <li><a href="https://github.com/christopher1aguilera/TOP100" target="_blank">TOP100</a></li>
+                <li><a href="https://github.com/christopher1aguilera/elecciones" target="_blank">elecciones</a></li>
+                <li><a href="https://github.com/christopher1aguilera/quien-ganara" target="_blank">quien ganara</a></li>
+              </ul>
+            </div>
+            <!-- texto 2 section -->
+            <div class="col-6">
+              <p>codigos personales</p>
+              <ul>
+                <li><a href="https://github.com/christopher1aguilera1madrid/portafolio-personal" target="_blank">portafolio personal</a></li>
+                <li><a href="https://github.com/christopher1aguilera1madrid/pokemonapi" target="_blank">pokemonapi</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- dos formularios, uno correo y otro por forms-->
+<section class="contacto" id="contacto">
+  <div class="container">
+    <div class="row">
+      <div class="pregunta2 col-12">
+        <h3 class="col-12 d-none d-sm-block">CONTACTO</h3>
+        <h5 class="col-12 d-none d-sm-block">¿Quieres conocer mas de mí?</h5><!--texto aparece para dispositivos tamaño md en adelante-->
+        <div class="col-12 salto"></div>
+        <h5> Envio directo a mi correo</h5>
+
+        <form>
+          <button type="button" class="btn btn-secondary mostrar2" data-dismiss="modal"> Enviar mensaje </button><!--boton para mostrar el cuadro para comentar-->
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-group collapse">
+        <form class="row g-3" id="miFormulario">
+          <div class="superior col-12">
+            <input class="col-3" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <span class="col-1"></span>
+            <input class="col-3" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            <span class="col-1"></span>
+            <input class="col-3" type="email" name="correo" id="correo" placeholder="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>  
+          </div>
+          <br>
+          <br>
+          <label for="comment"></label>
+          <textarea class="form-control" rows="5" id="comment" required></textarea>
+          <span class="col-5"></span>
+          <button type="button" class="btn btn-primary btn-lg mostrar1 col-2" id="myBtn">Enviar</button><!--boton para enviar comentario-->
+          <span class="col-5"></span>
+        </form>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="miModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Se envio correctamente.</p><!--contenido del cuadro emergente-->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <!--formulario-->
+    <div class="col-12 salto"></div>
+    <h5> Envio desde forms</h5>
+    <button type="button" class="btn btn-secondary ventana" data-dismiss="modal"> Comenzar </button><!--boton para mostrar formulario-->
+    <div class="formulario collapse">
+      <div class="typeform-widget" data-url="https://franibe.typeform.com/to/AYVtoJ" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=AYVtoJ&utm_source=typeform.com-13260463-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+    </div>
+  </div>
+</section>
+
+<!-- contacto section -->
+<div id="red" class="bg-danger">
+  <div class="container">
+    <div class="row">
+      <div class="btn col align-self-center">
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="github.com"><a href="https://github.com/christopher1aguilera"  target="_blank"><i class="fab fa-github-square fa-3x text-dark"></i></a></button>
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="github.com"><a href="https://github.com/ChristopherAguilera2"  target="_blank"><i class="fab fa-github-square fa-3x text-dark"></i></a></button>
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="github.com"><a href="https://github.com/christopher1aguilera1madrid"  target="_blank"><i class="fab fa-github-square fa-3x text-dark"></i></a></button>
+        <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="linkedin.com"><a href="https://www.linkedin.com/in/christopher-aguilera-2703a7203/" target="_blank"><i class="fab fa-linkedin fa-3x text-dark"></i></a></button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
