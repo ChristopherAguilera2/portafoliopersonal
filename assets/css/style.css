@@ -23,32 +23,22 @@
 	width: 75%;
 }
 
-/*para correguir entre 991px y 992px la pantalla*/
-.altura {
-	height: 290px;
+/*para forma responsiva en todos los pantalla el modal con textos mas largos*/
+.modal-content {
+	overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+  }
+/*para forma responsiva en todos los pantalla el carrusel*/
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
-@media(max-width:799px) {
-	.altura {
-		height: 330px;
-	}
-}
-@media(min-width:800px) and (max-width:991px) {
-	.altura {
-		height: 290px;
-	}
-}
-
-@media(min-width:1200px) {
-	.altura {
-		height: 330px;
-	}
-}
-
-@media(min-width:992px) and (max-width:1199px) {
-	.altura {
-		height: 380px ;
-	}
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 #modalcertificado1 {

@@ -104,4 +104,23 @@ $(document).ready(function() {
       $('#proyecto-details').hide();
       $('.curso').show();
   });
-});s
+});
+
+//para forma responsiva en todos los pantalla el carrusel
+function adjustCarouselHeight() {
+  const carousel = document.querySelector('.carousel');
+  const items = carousel.querySelectorAll('.carousel-item');
+  let maxHeight = 0;
+  // Encuentra la altura máxima de los items del carrusel
+  items.forEach(item => {
+      const itemHeight = item.offsetHeight;
+      if (itemHeight > maxHeight) {
+          maxHeight = itemHeight;
+      }
+  });
+  // Ajusta la altura del contenedor del carrusel
+  carousel.style.height = `${maxHeight}px`;
+}
+// Ajusta la altura al cargar la página y al cambiar el tamaño de la ventana
+window.addEventListener('load', adjustCarouselHeight);
+window.addEventListener('resize', adjustCarouselHeight);
