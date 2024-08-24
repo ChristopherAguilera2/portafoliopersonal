@@ -1,0 +1,124 @@
+#datos {
+	display: none;
+}
+
+#contacto {
+    text-align: center;
+    color: #373A3C;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+#foto{
+    width: auto;
+}
+
+#certificado1 {
+	width: 75%;
+	padding-bottom: 7px;
+}
+
+#certificado2 {
+	width: 75%;
+}
+
+/*para correguir entre 991px y 992px la pantalla*/
+.altura {
+	height: 290px;
+}
+
+@media(max-width:799px) {
+	.altura {
+		height: 330px;
+	}
+}
+@media(min-width:800px) and (max-width:991px) {
+	.altura {
+		height: 290px;
+	}
+}
+
+@media(min-width:1200px) {
+	.altura {
+		height: 330px;
+	}
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+	.altura {
+		height: 380px ;
+	}
+}
+
+#modalcertificado1 {
+	width: 100%;
+}
+
+#modalcertificado2 {
+	width: 100%;
+}
+
+h3 {
+	text-align: center;
+}
+
+.hero {
+	background-image: url(../img/fondo.jpg);
+}
+
+#sobre-mi {
+	border: 2px solid darkblue;
+	background-color: white;
+}
+
+#experiencia {
+	background-color: darkseagreen;
+}
+
+#apellido, #nombre, #correo{
+	height: 50px;
+}
+
+button #myBtn{
+	text-align: center;
+}
+.superior{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.salto{
+	padding: 20px;
+}
+
+#red{
+	margin-top: 20px;
+}
+
+.mostrar1{
+	margin-top: 10px;
+}
+
+#trabajos{
+	margin-top: 20px;
+}
+
+.curso{
+	list-style-type:none;
+}
+
+.curso li{
+	padding-bottom: 10px;
+}
+
+#proyecto-details {
+	display: none;
+	text-align: center;
+	padding: 20px;
+}
+
+#proyecto-details img {
+	max-width: 100%;
+	height: auto;
+}
