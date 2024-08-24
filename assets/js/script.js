@@ -106,21 +106,40 @@ $(document).ready(function() {
   });
 });
 
-//para forma responsiva en todos los pantalla el carrusel
 function adjustCarouselHeight() {
   const carousel = document.querySelector('.carousel');
   const items = carousel.querySelectorAll('.carousel-item');
   let maxHeight = 0;
+
   // Encuentra la altura máxima de los items del carrusel
   items.forEach(item => {
-      const itemHeight = item.offsetHeight;
-      if (itemHeight > maxHeight) {
-          maxHeight = itemHeight;
-      }
+    item.style.height = 'auto'; // Resetea la altura de cada item
+    const itemHeight = item.offsetHeight;
+    if (itemHeight > maxHeight) {
+      maxHeight = itemHeight;
+    }
   });
+
   // Ajusta la altura del contenedor del carrusel
   carousel.style.height = `${maxHeight}px`;
 }
-// Ajusta la altura al cargar la página y al cambiar el tamaño de la ventana
+
+// Ajusta la altura al cargar la página
 window.addEventListener('load', adjustCarouselHeight);
-window.addEventListener('resize', adjustCarouselHeight);
+
+// Utiliza ResizeObserver para ajustar la altura al cambiar el contenido
+const observer = new ResizeObserver(() => {
+  adjustCarouselHeight();
+});
+
+document.querySelectorAll('.carousel-item').forEach(item => {
+  observer.observe(item);
+});
+
+function loadContent() {
+  // Una vez que el contenido esté cargado, ajusta la altura
+  adjustCarouselHeight();
+}
+
+// Llama a esta función para cargar el contenido y ajustar la altura
+loadContent();
