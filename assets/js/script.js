@@ -106,40 +106,30 @@ $(document).ready(function() {
   });
 });
 
+// Define la función que ajusta la altura del carrusel
 function adjustCarouselHeight() {
-  const carousel = document.querySelector('.carousel');
-  const items = carousel.querySelectorAll('.carousel-item');
+  const carouselItems = document.querySelectorAll('#carouselExampleControls .carousel-item');
   let maxHeight = 0;
 
-  // Encuentra la altura máxima de los items del carrusel
-  items.forEach(item => {
-    item.style.height = 'auto'; // Resetea la altura de cada item
-    const itemHeight = item.offsetHeight;
-    if (itemHeight > maxHeight) {
-      maxHeight = itemHeight;
-    }
+  // Reinicia las alturas y calcula la altura máxima
+  carouselItems.forEach(item => {
+      
+      item.style.height = 'auto'; // Reinicia la altura para obtener la altura real
+      const itemHeight = item.offsetHeight;
+      if (itemHeight > maxHeight) {
+          maxHeight = itemHeight;
+      }
   });
 
-  // Ajusta la altura del contenedor del carrusel
-  carousel.style.height = `${maxHeight}px`;
+  // Aplica la altura máxima a todos los elementos del carrusel
+  carouselItems.forEach(item => {
+      
+      item.style.height = `${maxHeight}px`; // Establece la altura máxima en todos los elementos
+  });
 }
 
-// Ajusta la altura al cargar la página
+// Llama a la función cuando se carga la página por primera vez
 window.addEventListener('load', adjustCarouselHeight);
 
-// Utiliza ResizeObserver para ajustar la altura al cambiar el contenido
-const observer = new ResizeObserver(() => {
-  adjustCarouselHeight();
-});
-
-document.querySelectorAll('.carousel-item').forEach(item => {
-  observer.observe(item);
-});
-
-function loadContent() {
-  // Una vez que el contenido esté cargado, ajusta la altura
-  adjustCarouselHeight();
-}
-
-// Llama a esta función para cargar el contenido y ajustar la altura
-loadContent();
+// Añade un event listener para el evento 'resize'
+window.addEventListener('resize', adjustCarouselHeight);

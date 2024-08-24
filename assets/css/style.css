@@ -39,10 +39,12 @@
 }
 
 .carousel-item {
-    flex: 0 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
+	display: block;
+	opacity: 0;
+}
+
+.carousel-item.active {
+	opacity: 1;
 }
 
 #modalcertificado1 {
